@@ -16,10 +16,10 @@ export default function ProfileHeader({ name, bio, imageUrl }: ProfileHeaderProp
         height={160}
         unoptimized
         priority
-        className="h-36 w-36 rounded-full object-cover ring-4 ring-white shadow-md sm:h-40 sm:w-40"
+        className="h-32 w-32 rounded-full object-cover ring-4 ring-white/90 shadow-[0_18px_40px_-12px_rgba(160,90,50,0.45)] sm:h-36 sm:w-36"
       />
-      <h1 className="mt-4 text-2xl font-bold text-zinc-900">{name}</h1>
-      <p className="text-base text-zinc-600">{bio}</p>
+      <h1 className="mt-5 text-2xl font-bold tracking-tight text-stone-800">{name}</h1>
+      <p className="text-[15px] leading-relaxed text-stone-500">{bio}</p>
     </header>
   );
 }
